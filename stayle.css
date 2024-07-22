@@ -1,0 +1,110 @@
+body {
+    font-family: 'Zain', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header img {
+    height: 50px;
+    margin-right: 180px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.header h2 {
+    margin-right: 20px;
+    margin: 0;
+}
+
+.navigation {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border: 1.5px solid rgba(227, 63, 165, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    background-color: rgba(57, 218, 240, 0.8);
+    z-index: 999;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #0056b3;
+    font-size: 17px;
+    transform: scale(1.2);
+}
+
+.about, .services {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.about-title h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.about-title p {
+    font-size: 24px;
+    color: #6c757d;
+    margin: 10px 0 30px;
+}
+
+.about-img img, .services img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 0px;
+}
+
+.services h2 {
+    font-size: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.container div {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
